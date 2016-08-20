@@ -1,9 +1,11 @@
-# HSA-Debugger-Source-AMD
+##This Source Repo has been superseded by the ROCm-GPUDebugSDK repo @ https://github.com/RadeonOpenCompute/ROCm-GPUDebugSDK
+
+### HSA-Debugger-Source-AMD
 The HSA-Debugger-Source-AMD repository includes the source code of the AMD GPU Debug SDK. The AMD GPU Debug SDK provides the components required to build an HSAIL kernel debugger for AMD HSA platforms.
 
 The AMD GPU Debug SDK components are used along with the AMD HSA GDB debugger to run a gdb-based debugging environment for debugging the host application and HSAIL kernels.
 
-# Package Contents
+### Package Contents
 The AMD GPU Debug SDK includes the source code and libraries briefly listed below
 - Source Code 
   - AMD HSA Debug Agent: The AMD HSA Debug Agent is a library injected into an HSA application by the AMD HSA runtime. The source code for the Agent is provided in *src/HSADebugAgent*.
@@ -13,7 +15,7 @@ The AMD GPU Debug SDK includes the source code and libraries briefly listed belo
   - libAMDGPUDebugHSA-x64: This library provides the low level hardware control required to enable debugging a kernel executing on an HSA platform. The functionality of this library is exposed by the header file *AMDGPUDebug.h*  in *include/*. The HSA Debug Agent library uses this interface
    - libelf: A libelf library compatible with the AMD HSA software stack and its corresponding header files. The HSA Debug Agent library uses this libelf.
 	
-# Build Steps
+### Build Steps
 1. Set up HSA Dependencies
   * [Install HSA Driver](https://github.com/HSAFoundation/HSA-Drivers-Linux-AMD#installing-and-configuring-the-kernel)
   * [Install HSA Runtime](https://github.com/HSAFoundation/HSA-Runtime-AMD/#installing-and-configuring-the-hsa-runtime)
